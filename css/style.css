@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+#form-login {
+  width: 100%;
+  height: 85vh;
+  background-color: #ffffff;
+}
+#form-login .header-logo-login {
+  width: 100%;
+  height: 15vh;
+}
+#form-login .header-logo-login img {
+  height: 3.5rem;
+}
+#form-login .content-login {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form-login .content-login form {
+  width: 30%;
+  height: 420px;
+  border-radius: 5px;
+  border: 1px solid #DCDCDC;
+  display: flex;
+  flex-direction: column;
+}
+#form-login .content-login form h6 {
+  font-weight: bold;
+  padding: 15px 15px 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+#form-login .content-login form label {
+  font-size: 12px;
+  padding: 10px 15px 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+#form-login .content-login form input {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  border: 1px solid #C0C0C0;
+}
+#form-login .content-login form .button-login {
+  background: linear-gradient(360deg, #EFC25C 9.31%, #F8E7C1 100%);
+  border: 1px solid #9C7E37;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+#form-login .content-login form .button-create-acount {
+  background: linear-gradient(360deg, #ECECEC 9.31%, #F9F9F9 100%);
+  border: 1px solid #A5A5A5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+#form-login .content-login form .chk-input {
+  margin: 0;
+  width: 5%;
+}
+#form-login .content-login form p {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  color: #A5A5A5;
+  position: relative;
+}
+#form-login .content-login form p::after, #form-login .content-login form p::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background-color: #A5A5A5;
+  position: absolute;
+  top: 55%;
+}
+#form-login .content-login form p::after {
+  right: 5%;
+}
+#form-login .content-login form p::before {
+  left: 5%;
+}
+
+.footer-login {
+  width: 100%;
+  height: 15vh;
+  background-color: pink;
+}
+.footer-login .row-footer {
+  width: 100%;
+  height: 7.5vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-login .row-footer a {
+  color: #0066C0;
+  margin: 0 15px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+.footer-login .row-footer p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*Extra Small devices (landscape phones, 575px and up)*/
+@media (max-width: 575px) {
+  #form-login {
+    width: 100%;
+    height: 85vh;
+    background-color: #ffffff;
+  }
+  #form-login .header-logo-login {
+    width: 100%;
+    height: 15vh;
+  }
+  #form-login .content-login {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #form-login .content-login form {
+    width: 95%;
+    height: 420px;
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: column;
+  }
+  #form-login .content-login form h6 {
+    font-weight: bold;
+    padding: 15px 15px 0 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  #form-login .content-login form label {
+    font-size: 12px;
+    padding: 10px 15px 0 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  #form-login .content-login form input {
+    width: 90%;
+    height: 35px;
+    padding: 0 0 0 20px;
+    margin: 0 5% 0 5%;
+    border: 1px solid #C0C0C0;
+  }
+  #form-login .content-login form .button-login {
+    background: linear-gradient(360deg, #EFC25C 9.31%, #F8E7C1 100%);
+    border: 1px solid #9C7E37;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 35px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+  }
+  #form-login .content-login form .button-create-acount {
+    background: linear-gradient(360deg, #ECECEC 9.31%, #F9F9F9 100%);
+    border: 1px solid #A5A5A5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 35px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+  }
+  #form-login .content-login form .chk-input {
+    margin: 0;
+    width: 5%;
+  }
+  #form-login .content-login form p {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+    color: #A5A5A5;
+    position: relative;
+  }
+  #form-login .content-login form p::after, #form-login .content-login form p::before {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background-color: #A5A5A5;
+    position: absolute;
+    top: 55%;
+  }
+  #form-login .content-login form p::after {
+    right: 5%;
+  }
+  #form-login .content-login form p::before {
+    left: 5%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
