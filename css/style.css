@@ -812,7 +812,7 @@
     flex-direction: column;
   }
   #description-items .description-image p {
-    font-size: 10px;
+    font-size: 14px;
     color: #A5A5A5;
     padding: 10px 0 0 0;
     display: block;
@@ -833,7 +833,7 @@
     font-weight: bold;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
   }
   #description-items .description-item .item-assessment {
     width: 100%;
@@ -849,8 +849,8 @@
     align-items: center;
   }
   #description-items .description-item .item-assessment .score img {
-    width: 1.3rem;
-    margin: 0 2.5px;
+    width: 1.8rem;
+    margin: 0 3px;
   }
   #description-items .description-item .item-assessment .assessment {
     width: 100%;
@@ -874,7 +874,7 @@
   }
   #description-items .description-item .stock p {
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
   }
   #description-items .description-item .options {
     width: 100%;
@@ -905,7 +905,7 @@
   }
   #description-items .description-item .option-color p {
     font-family: "Roboto", sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     margin: 0;
   }
   #description-items .description-item .cover-colors {
@@ -927,7 +927,7 @@
   #description-items .description-item .details-covers ul li {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    padding: 0 20px 0 0;
+    padding: 0 35px 0 0;
   }
   #description-items .description-item .buy {
     width: 100%;
@@ -1005,7 +1005,7 @@
   }
   .container-cards-covers .card-cover .by-create p {
     color: #A5A5A5;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
