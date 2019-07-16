@@ -133,7 +133,7 @@ $roboto: 'Roboto', sans-serif;
         overflow: hidden;
         .bar-menu-responsive{
             width: 100%;
-            height: 70px;
+            height: 80px;
             background-color: $color-menu;
             display: flex;
             justify-content: space-between;
@@ -161,7 +161,7 @@ $roboto: 'Roboto', sans-serif;
             p{
                 color: #ffffff;
                 font-family: $roboto;
-                font-size: 15px;
+                font-size: 17px;
                 margin: 0;
             }
         }
@@ -180,7 +180,7 @@ $roboto: 'Roboto', sans-serif;
         overflow: hidden;
         .bar-menu-responsive{
             width: 100%;
-            height: 75px;
+            height: 70px;
             background-color: $color-menu;
             display: flex;
             justify-content: space-between;

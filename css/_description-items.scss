@@ -1,7 +1,6 @@
 #description-items{
     width: 100%;
     display: flex;
-
     .description-image,
     .description-item,
     .description-opctions{
@@ -11,7 +10,7 @@
     }
 
     .description-image{
-        width: 25%;
+        width: 23%;
         display: flex;
         flex-direction: column;
         p{
@@ -23,17 +22,17 @@
         }
     }
     .description-item{
-        width: 55%;
+        width: 54%;
         .item-text{
             width: 100%;
             height: 135px;
             display: flex;
             justify-content: center;
-            align-items: center;
             p{
-                padding: 0 20px;
+                padding: 20px 0 0 20px;
                 font-weight: bold;
                 font-family: $roboto;
+                text-align: justify;
             }
         }
         .item-assessment{
@@ -41,24 +40,24 @@
             height: 40px;
             display: flex;
             .score{
-                width: 35%;
+                width: 30%;
                 height: 40px;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 img{
-                    width: 1.3rem;
+                    width: 1rem;
                     margin: 0 2.5px;
                 }
             }
             .assessment{
-                width: 65%;
+                width: 70%;
                 height: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 a{
-                    font-size: 11px;
+                    font-size: 10px;
                     text-decoration: none;
                     margin: 0 5px;
                     color: #0066C0;
@@ -89,6 +88,8 @@
                 margin: 0 5px;
                 font-size: 13px;
                 color: #000000;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
                 &:hover{
                     text-decoration: none;
                     color: #000000;
@@ -121,10 +122,12 @@
             height: 360px;
             padding: 10px 0;
             ul{
+                padding: 0 0 0 20px;
                 li{
                     font-family: $roboto;
                     font-size: 12px;
                     padding: 0 10px 0 0;
+                    text-align: justify;
                 }
             }
         }
@@ -142,7 +145,7 @@
         }
     }
     .description-opctions{
-        width: 20%;
+        width: 18%;
         background-color: #ffffff;
     }
 }
