@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico|Roboto&display=swap');
+
+$height-menu: 70px;
+$height-menu-two: 55px;
+$color-menu: #232F3D;
+$roboto: 'Roboto', sans-serif;
+
+.container-row-menu{
+    width: 100%;
+    display: flex;
+    .menu-logo,
+    .menu-search,
+    .menu-address{
+        height: $height-menu;
+        background-color: $color-menu;
+        display: flex;
+    }
+    .menu-logo{
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+            margin: 0;
+        }
+    }
+    .menu-search{
+        width: 55%;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 100%;
+            height: 30px;
+        }
+    }
+    .menu-address{
+        width: 25%;
+        justify-content: center;
+        align-items: flex-end;
+        p{
+            font-size: 11px;
+            color: #ffffff;
+            font-family: $roboto;
+        }
+    }
+    .menu-country,
+    .menu-departments,
+    .menu-options,
+    .menu-login,
+    .menu-orders,
+    .menu-shopping-cart{
+        height: $height-menu-two;
+        background-color: $color-menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-country{
+        width: 20%;
+        .fa-map-marker-alt{
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+        p{
+            color: #ffffff;
+            font-family: $roboto;
+            font-size: 11px;
+            margin: 0 0 0 10px;
+        }
+    }
+    .menu-departments{
+        width: 12%;
+    }
+    .menu-options{
+        width: 43%;
+        justify-content: center;
+        a{
+            font-size: 10px !important;
+            color: #ffffff;
+            margin: 0 5px;
+            font-family: $roboto;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+    .menu-login{
+        width: 12%;
+        a{
+            font-size: 11px;
+            color: #ffffff;
+            margin: 0 7px;
+            font-family: $roboto;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+    .menu-orders{
+        width: 8%;
+        p{
+            font-size: 12px;
+            color: #ffffff;
+            margin: 0;
+            font-family: $roboto;
+        }
+    }
+    .menu-shopping-cart{
+        width: 10%;
+        p{
+            font-size: 10px;
+            color: #ffffff;
+            margin: 5px 0 0 3px;
+            font-family: $roboto;
+        }
+    }
+}
+#menu-responsive{
+    display: none;
+}
+
+
+/*Extra Small devices (landscape phones, 575px and up)*/
+@media (max-width: 575px) {
+    #menu{
+        display: none;
+    }
+    #menu-responsive{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        .bar-menu-responsive{
+            width: 100%;
+            height: 70px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 35%;
+            }
+            input{
+                width: 90%;
+                height: 40px;
+            }
+        }
+        .bar-country{
+            width: 100%;
+            height: 60px;
+            background-color: #444F63;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .fa-map-marker-alt{
+                color: #ffffff;
+                font-size: 1.5rem;
+                margin: 0 20px;
+            }
+            p{
+                color: #ffffff;
+                font-family: $roboto;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+        
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    #menu{
+        display: none;
+    }
+    #menu-responsive{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        .bar-menu-responsive{
+            width: 100%;
+            height: 75px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 30%;
+            }
+            input{
+                width: 90%;
+                height: 40px;
+            }
+        }
+        .bar-country{
+            width: 100%;
+            height: 50px;
+            background-color: #444F63;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .fa-map-marker-alt{
+                color: #ffffff;
+                font-size: 1.5rem;
+                margin: 0 20px;
+            }
+            p{
+                color: #ffffff;
+                font-family: $roboto;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+        
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #menu{
+        display: none;
+    }
+    #menu-responsive{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        .bar-menu-responsive{
+            width: 100%;
+            height: 80px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 25%;
+            }
+            input{
+                width: 100%;
+                height: 35px;
+            }
+        }
+        .bar-country{
+            width: 100%;
+            height: 60px;
+            background-color: #444F63;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .fa-map-marker-alt{
+                color: #ffffff;
+                font-size: 1.5rem;
+                margin: 0 20px 0 35px;
+            }
+            p{
+                color: #ffffff;
+                font-family: $roboto;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+        
+    }
+}
