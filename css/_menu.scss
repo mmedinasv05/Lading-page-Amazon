@@ -28,9 +28,24 @@ $roboto: 'Roboto', sans-serif;
         width: 55%;
         justify-content: center;
         align-items: center;
+        position: relative;
         input{
             width: 100%;
             height: 30px;
+            padding: 0 40px 0 100px;
+        }
+        .fa-search{
+            position: absolute;
+            right: 0;
+            font-size: 1rem;
+            padding: 7px 10px;
+            background-color: #FCBC70;
+        }
+        select{
+            background-color: #F3F3F3;;
+            position: absolute;
+            left: 0;
+            padding: 3px 10px;
         }
     }
     .menu-address{
@@ -117,9 +132,13 @@ $roboto: 'Roboto', sans-serif;
         }
     }
 }
-#menu-responsive{
+#menu-responsive,
+.menu-wellcome,
+.fa-times,
+.fa-user-circle{
     display: none;
 }
+
 
 
 /*Extra Small devices (landscape phones, 575px and up)*/
@@ -139,11 +158,36 @@ $roboto: 'Roboto', sans-serif;
             justify-content: space-between;
             align-items: center;
             img{
-                width: 35%;
+                width: 50%;
+
             }
+            .fa-ellipsis-v{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 20px;
+                font-size: 1.8rem;
+            }
+            .fa-user-circle{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 50px;
+                font-size: 2rem;
+            }
+        }
+        .bar-menu-search{
+            width: 100%;
+            height: 80px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             input{
                 width: 90%;
                 height: 40px;
+                padding: 0 0 0 40px;
+                font-size: 14px;
             }
         }
         .bar-country{
@@ -153,10 +197,18 @@ $roboto: 'Roboto', sans-serif;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            position: relative;
             .fa-map-marker-alt{
                 color: #ffffff;
                 font-size: 1.5rem;
                 margin: 0 20px;
+            }
+            .fa-bars{
+                display: block;
+                color: #ffffff;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 20px;
             }
             p{
                 color: #ffffff;
@@ -166,6 +218,37 @@ $roboto: 'Roboto', sans-serif;
             }
         }
         
+    }
+    .menu-wellcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color:$color-menu;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        .fa-times{
+            display: block;
+            position: absolute;
+            font-size: 2rem;
+            top: 10px;
+            right: 15px;
+            color: #ffffff;
+        }
+        a{
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 15px 0;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
     }
 }
 
@@ -180,22 +263,46 @@ $roboto: 'Roboto', sans-serif;
         overflow: hidden;
         .bar-menu-responsive{
             width: 100%;
-            height: 70px;
+            height: 90px;
             background-color: $color-menu;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             img{
-                width: 30%;
+                width: 50%;
             }
+            .fa-ellipsis-v{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 20px;
+                font-size: 1.8rem;
+            }
+            .fa-user-circle{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 50px;
+                font-size: 2rem;
+            }
+        }
+        .bar-menu-search{
+            width: 100%;
+            height: 80px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             input{
                 width: 90%;
                 height: 40px;
+                padding: 0 0 0 20px !important;
             }
         }
         .bar-country{
             width: 100%;
-            height: 50px;
+            height: 70px;
             background-color: #444F63;
             display: flex;
             justify-content: flex-start;
@@ -205,6 +312,13 @@ $roboto: 'Roboto', sans-serif;
                 font-size: 1.5rem;
                 margin: 0 20px;
             }
+            .fa-bars{
+                display: block;
+                color: #ffffff;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 20px;
+            }
             p{
                 color: #ffffff;
                 font-family: $roboto;
@@ -213,6 +327,37 @@ $roboto: 'Roboto', sans-serif;
             }
         }
         
+    }
+    .menu-wellcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color:$color-menu;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        .fa-times{
+            display: block;
+            position: absolute;
+            font-size: 2rem;
+            top: 20px;
+            right: 30px;
+            color: #ffffff;
+        }
+        a{
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 15px 0;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
     }
 }
 
@@ -232,12 +377,36 @@ $roboto: 'Roboto', sans-serif;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             img{
-                width: 25%;
+                width: 70% !important;
             }
+            .fa-ellipsis-v{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 20px;
+                font-size: 1.8rem;
+            }
+            .fa-user-circle{
+                display: block;
+                color: #ffffff;
+                position: absolute;
+                right: 50px;
+                font-size: 2rem;
+            }
+        }
+        .bar-menu-search{
+            width: 100%;
+            height: 80px;
+            background-color: $color-menu;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             input{
-                width: 100%;
-                height: 35px;
+                width: 90%;
+                height: 40px;
+                padding: 0 0 0 20px !important;
             }
         }
         .bar-country{
@@ -252,6 +421,13 @@ $roboto: 'Roboto', sans-serif;
                 font-size: 1.5rem;
                 margin: 0 20px 0 35px;
             }
+            .fa-bars{
+                display: block;
+                color: #ffffff;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 20px;
+            }
             p{
                 color: #ffffff;
                 font-family: $roboto;
@@ -260,5 +436,36 @@ $roboto: 'Roboto', sans-serif;
             }
         }
         
+    }
+    .menu-wellcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color:$color-menu;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        .fa-times{
+            display: block;
+            position: absolute;
+            font-size: 2rem;
+            top: 20px;
+            right: 30px;
+            color: #ffffff;
+        }
+        a{
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 15px 0;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
     }
 }

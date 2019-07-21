@@ -16,10 +16,16 @@
     <header id="menu">
         <nav class="container-row-menu">
             <div class="menu-logo d-flex justify-content-center align-items-center">
-                <img src="./img/logo-amazon.svg" alt="Logo amazon">
+                <a href="index.html" class="m-0 p-0">
+                    <img src="./img/logo-amazon.svg" alt="Logo amazon">
+                </a>
             </div>
             <div class="menu-search">
+                <select>
+                    <option>Todos</option>
+                </select>
                 <input type="text">
+                <span class="fas fa-search"></span>
             </div>
             <div class="menu-address">
                 <p>Servicio al Cliente 24/7. Más información</p>
@@ -61,16 +67,28 @@
     <!--SECTION MENU RESPONSIVE-->
     <header id='menu-responsive'>
         <nav class="bar-menu-responsive">
-            <img src="./img/logo-amazon.svg" style="margin-left: 10px;" alt="Logo Amazon">
-            <img src="./img/shopping-cart.svg" style="height: 3rem; margin-bottom: 10px; margin-right: -30px;" alt="">
+            <a href="index.html"><img src="./img/logo-amazon.svg" style="margin-left: 10px;" alt="Logo Amazon"></a>
+            <span class="fas fa-user-circle"></span>
+            <span class="fas fa-ellipsis-v" id="show-menu-wellcome"></span>
         </nav>
-        <nav class="bar-menu-responsive d-flex justify-content-center align-items-center">
-            <input type="text">
+        <nav class="bar-menu-search d-flex justify-content-center align-items-center">
+            <input type="text" placeholder="Busca tu producto">
         </nav>
         <nav class="bar-country">
             <a href="#"><span class="fas fa-map-marker-alt"></span></a>
             <a href="#"><p>Enviar a El Salvador</p></a>
+            <span class="fas fa-bars" id="show-menu"></span>
         </nav>
+        <section class="menu-wellcome">
+            <span class="fas fa-times" id="hidden-menu-wellcome"></span>
+            <a href="product-details.html">Ofertas del día</a>
+            <a href="product-details.html">Tu amazon.com</a>
+            <a href="product-details.html">Tarjetas de Regalo</a>
+            <a href="product-details.html">Ayuda</a>
+            <a href="product-details.html">Listas</a>
+            <a href="product-details.html">Vender</a>
+            <a href="product-details.html">Pedidos</a>
+        </section>
     </header>
 
     <!--SECTION DESCRIPTION ITEM-->
@@ -162,7 +180,52 @@
                 <a href="#" class="ml-3">Comparar con artículos similares</a>
             </div>
         </div>
-        <div class="description-opctions">
+        <div class="description-opctions" id="menu-details">
+            <span class="fas fa-times" id="hidden-menu"></span>
+            <div class="box-new">
+                <input type="radio">
+                <span>Nuevo</span>
+            </div>
+            <div class="box-text">
+                <p>Este artículo no se envía a <span style="font-weight: bold;"> San Salvador, El Salvador. </span>
+                    Verifica otros vendedores que puedan hacer envios internacionales. 
+                    <span style="color: #0066C0;font-weight: bold;"> Más información</span>
+                </p>
+            </div>
+            <div class="box-available">
+                <p>Disponible</p>
+                <select>
+                    <option value="">Cantidad: 1</option>
+                    <option value="">Cantidad: 2</option>
+                    <option value="">Cantidad: 3</option>
+                </select>
+            </div>
+            <div class="box-add-cart">
+                <button><img src="./img/card-black.svg" alt="">
+                    <p>Agregar al carrito</p>
+                </button>
+                <button><img src="./img/play-black.svg"class='img-play' alt="">
+                    <p>Comprar ahora</p>
+                </button>
+            </div>
+            <div class="box-text">
+                <p>Vendido y enviado por <br> Amazon.com</p>
+                <p>Se puede envolver para regalo.</p>
+            </div>
+            <div class="box-location">
+                <span class="fas fa-map-marker-alt"></span>
+                <p>Enviar a Luis - San Salvador 1101</p>
+            </div>
+            <div class="box-used">
+                <input type="radio">
+                <span>Usado:</span>
+                <p>US$ 5.50</p>
+            </div>
+            <div class="box-add">
+                <select>
+                    <option value="">Agregar a la lista</option>
+                </select>
+            </div>
         </div>
     </section>
 
@@ -327,5 +390,152 @@
             </div>
         </article>
     </section>
+    <!--SECTION QUESTION-->
+    <section class="title-items">
+        <h4 style="color: #000000 !important;">¿Tienes una pregunta?</h4>
+        <span style="color: #A5A5A5; font-size: 11px; margin-left: 20px; margin-top: 10px;">Busca la información del producto, preguntas frecuentes, opniones...</span>
+    </section>
+    <section class="box-search">
+        <input type="text">
+        <span class="fas fa-search"></span>
+    </section>
+    <section class="text-description-item">
+        <h4>Descripción del producto</h4>
+        <span>Tamaño: Twin   |   Color: Baby Blue</span>
+        <p>Juego de sábanas impreso. 100 % de microfibra cepillada de la más alta calidad.</p>
+        <p>Deja que la fina ropa de cama Mellanni te envuelva en elegancia, lujo y confort.
+            El juego de ropa de cama entallado con un diseño cuadrifolio. Cuidadosamente 
+            elaborado para añadir una exquisita clase a tu recámara y mejorar la decoración.
+        </p>
+        <p>Entendemos que tu tiempo es importante, esa es la razón por la cual esta 
+            excepcionalmente suave y fuerte ropa de cama Es antiarrugas, resistente 
+            al desgaste y a las manchas, para que puedas pasar más tiempo en las cosas 
+            importantes de la vida. Es el ajuste perfecto con cuidado fácil, todo en uno.
+        </p>
+        <p>Sábanas de microfibra hipoalergénica, mantiene a las narices tapadas lejos, 
+            mientras bloquea alérgenos no deseados, ácaros del polvo y la humedad. Deja 
+            que tu cuerpo respire mientras te mantienes fresco y cómodo toda la noche.
+        </p>
+        <p>-</p>
+        <p>-</p>
+        <p>Desplázate hacia arriba y haz clic en añadir al carrito para tu mejor sueño.</p>
+    </section>
+    <!--SECTION DESCRIPTION ITEM-->
+    <section class="title-items">
+        <h4>Información del producto</h4>
+        <span style="color: #000000; font-size: 11px; margin-left: 20px; margin-top: 10px;">Tamaño: Twin   |   Color: Baby Blue</span>
+    </section>
+    <section class="container-description-item">
+        <div class="section-left">
+            <table>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Dimensiones del paquete</span>
+                    </td>
+                    <td>11 x 9.6 x 3 pulgadas</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Peso del producto</span>
+                    </td>
+                    <td>1.85 pounds</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Peso del envio</span>
+                    </td>
+                    <td>2.35 pounds</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Fabricante</span>
+                    </td>
+                    <td>Mellanni</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">ASIN</span>
+                    </td>
+                    <td>B00O35D38Y</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Número de modelo del producto</span>
+                    </td>
+                    <td>SYNCHKG053477</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #EAEDED;">
+                        <span style="font-weight: bold;">Dimensiones del paquete</span>
+                    </td>
+                    <td>11 x 9.6 x 3 pulgadas</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section-right">
+            <h6>Garantía y asistencia</h6>
+            <p><span style="font-weight: bold">Garantía del producto:</span> Para obtener la 
+                información sobre la garantía de este producto, Product Warranty: For wararanty 
+                information about this product, please haz clic aquí</p>
+            <h6>Comentarios</h6>
+            <p>Si vendes este producto, ¿Te gustaría <span style="color: #0066C0;"> sugerir 
+                actualizaciones mediante el soporte al vendedor? ¿Quieres informarnos sobre un 
+                precio más abajo?</span>
+            </p>
+        </div>
+    </section>
+    <!--SECTION FOOTER-->
+    <section class="sectionFooter">
+        <a href="#menu">Inicio de página</a>
+    </section>
+    <footer class="container-footer">
+        <div class="items-footer">
+            <h6>Conócenos</h6>
+            <a href="#">Trabaja en Amazon</a>
+            <a href="#">Blog</a>
+            <a href="#">Acerca de Amazon</a>
+            <a href="#">Relaciones con los inversionistas</a>
+            <a href="#">Dispositivos Amazon</a>
+            <a href="#">Visita un centro logístico de Amazon</a>
+        </div>
+        <div class="items-footer">
+            <h6>Gana dinero con nosotros</h6>
+            <a href="#">Vende en Amazon</a>
+            <a href="#">Vende tus servicios en Amazon</a>
+            <a href="#">Vende en Amaon Business</a>
+            <a href="#">Vende tus Apps en Amazon</a>
+            <a href="#">Dispositivos Amazon</a>
+            <a href="#">Programa de afiliados</a>
+            <a href="#">Anuncia tus productos</a>
+            <a href="#">Pubilca tu libro en Kindle</a>
+            <a href="#">> Ver Más</a>
+        </div>
+        <div class="items-footer">
+            <h6>Productos de Pago Amazon</h6>
+            <a href="#">Compra con puntos</a>
+            <a href="#">Recarga tu Saldo</a>
+            <a href="#">Convertidor de Moneda de Amazon</a>
+        </div>
+        <div class="items-footer">
+            <h6>Podemos ayudarte</h6>
+            <a href="#">Tu cuenta</a>
+            <a href="#">Tus pedidos</a>
+            <a href="#">Tarifas de Envío y Políticas</a>
+            <a href="#">Devoluciones y Reemplazos</a>
+            <a href="#">Admistrar dispositivos</a>
+            <a href="#">Amazon Assistant</a>
+            <a href="#">Ayuda</a>
+        </div>
+    </footer>
+    <footer class="logo-footer">
+        <img src="./img/logo-footer.svg" alt="">
+    </footer>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

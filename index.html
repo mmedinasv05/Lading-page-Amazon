@@ -4,62 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/Logo.ico">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Amazon</title>
+
+    <title>Amazon.com</title>
 </head>
 <body>
     <!--SECTION MENU-->
-    <section id="menu"></section>
+    <header id="menu">
+        <nav class="container-row-menu">
+            <div class="menu-logo d-flex justify-content-center align-items-center">
+                <a href="index.html"><img src="./img/logo-amazon.svg" alt="Logo amazon"></a>
+            </div>
+            <div class="menu-search">
+                <select>
+                    <option>Todos</option>
+                </select>
+                <input type="text">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="menu-address">
+                <p>Servicio al Cliente 24/7. Más información</p>
+            </div>
+        </nav>
+        <nav class="container-row-menu">
+            <div class="menu-country">
+                <span class="fas fa-map-marker-alt"></span>
+                <p>Enviar a <br> El Salvador</p>
+            </div>
+            <div class="menu-departments">
+                <button class="dropdown-toggle" style="background-color: transparent; font-size: 13px; font-family: 'Roboto', sans-serif; border: none; outline: none; color: #ffffff;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Departamentos
+                </button>
+            </div>
+            <div class="menu-options">
+                <a href="#">Ofertas del día</a>
+                <a href="#">Tu amazon.com</a>
+                <a href="#">Tarjetas de Regalo</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Listas</a>
+                <a href="#">Vender</a>
+            </div>
+            <div class="menu-login">
+                <button class="dropdown-toggle" style="background-color: transparent; font-size: 11px; font-family: 'Roboto', sans-serif; border: none; outline: none; color: #ffffff;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hola, Identífícate <br>
+                        <a href="login.html"><span style="font-weight: bold;">Cuenta y Listas</span></a>
+                </button>
+            </div>
+            <div class="menu-orders">
+                <p>Pedidos</p>
+            </div>
+            <div class="menu-shopping-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+                <p>Carrito</p>
+            </div>
+        </nav>
+    </header>
+    <!--SECTION MENU RESPONSIVE-->
+    <header id='menu-responsive'>
+        <nav class="bar-menu-responsive">
+            <a href="index.html"><img src="./img/logo-amazon.svg" style="margin-left: 10px;" alt="Logo Amazon"></a>
+            <span class="fas fa-user-circle"></span>
+        </nav>
+        <nav class="bar-menu-search d-flex justify-content-center align-items-center">
+            <input type="text" placeholder="Busca tu producto">
+        </nav>
+        <nav class="bar-country">
+            <a href="#"><span class="fas fa-map-marker-alt"></span></a>
+            <a href="#"><p>Enviar a El Salvador</p></a>
+            <span class="fas fa-bars" id="show-menu-wellcome"></span>
+        </nav>
+        <section class="menu-wellcome">
+            <span class="fas fa-times" id="hidden-menu-wellcome"></span>
+            <a href="product-details.html">Ofertas del día</a>
+            <a href="product-details.html">Tu amazon.com</a>
+            <a href="product-details.html">Tarjetas de Regalo</a>
+            <a href="product-details.html">Ayuda</a>
+            <a href="product-details.html">Listas</a>
+            <a href="product-details.html">Vender</a>
+            <a href="product-details.html">Pedidos</a>
+        </section>
+    </header>
 
     <!--SECTION WELLCOME-->
-    <section id="wellcome">
-        <article class="cards-wellcome">
-            <div class="card-header-wellcome">
-                <h6 class="pl-3">¿Necesitas ayuda?</h6>
+    <section class="section-wellcome">
+        <div class="card-wellcome hidden-element">
+            <div class="header-card-wellcome">
+                <h6>¿Necesitas ayuda?</h6>
             </div>
-            <div class="card-image-wellcome">
-                <img src="./img/box-card-min.png"  alt="">
+            <div class="img-card-wellcome">
+                <img src="./img/box-card-min.png" alt="">
             </div>
-            <div class="card-description-wellcome">
-                <p>Más infromación sobre cómo comprar</p>
-                <a href="#">Más información</a>
+            <div class="footer-card-wellcome">
+                <p>Más infromación sobre cómo comprar en Amazon</p>
+                <a href="product-details.html">Comprar ahora</a>
             </div>
-        </article>
-        <article class="cards-wellcome">
-            <div class="card-header-wellcome">
-                <h6 class="pl-3">Ofertas y Promociones</h6>
+        </div>
+        <div class="card-wellcome hidden-element hidden-element-lg">
+            <div class="header-card-wellcome">
+                <h6>Ofertas y Promociones</h6>
             </div>
-            <div class="card-image-wellcome">
+            <div class="img-card-wellcome">
                 <img src="./img/free-card-min.png" alt="">
             </div>
-            <div class="card-description-wellcome">
-                <p>Ofertas en cada departamento</p>
-                <a href="#">Comprar ahora</a>
+            <div class="footer-card-wellcome">
+                <p>Más infromación sobre cómo comprar en Amazon</p>
+                <a href="product-details.html">Comprar ahora</a>
             </div>
-        </article>
-        <article class="cards-wellcome">
-            <div class="card-header-wellcome">
-                <h6 class="pl-3">Zapatos de Vestir para Hom..</h6>
+        </div>
+        <div class="card-wellcome hidden-element">
+            <div class="header-card-wellcome">
+                <h6>Zapatos de Vestir para Hom..</h6>
             </div>
-            <div class="card-image-wellcome">
+            <div class="img-card-wellcome">
                 <img src="./img/shoes-card-min.png" alt="">
             </div>
-            <div class="card-description-wellcome">
-                <p>Encuentra tus marcas favoritas</p>
-                <a href="#">Comprar ahora</a>
+            <div class="footer-card-wellcome">
+                <p>Más infromación sobre cómo comprar en Amazon</p>
+                <a href="product-details.html">Comprar ahora</a>
             </div>
-        </article>
-        <article class="cards-wellcome">
-            <div class="card-header-wellcome">
-                <h6 class="pl-3">Inicia Sesión para vivir tu mejor experiencia</h6>
+        </div>
+        <div class="card-wellcome-login">
+            <div class="header-card-login">
+                <h6>Inicia Sesión para vivir tu mejor experiencia</h6>
             </div>
-            <div class="card-image-wellcome"></div>
-            <div class="card-description-wellcome"></div>
-        </article>
+            <div class="content-card-login">
+                <a href="login.html" target="_blank">Iniciar sesión de forma segura</a>
+            </div>
+        </div>
     </section>
 
-    <!--SECTION ARTICLE SLIDES-->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--SECTION CAROUSEL #1-->
+    <section class="section-carousel">
+        <div class="text-carousel">
+            <h6>Lo Más Vendidos en Hogar y Cocina</h6>
+            <a href="product-details.html" style='color: #0066C0; margin-left: 20px; text-decoration: none; font-size: 12px;'>Ver mas</a>
+        </div>
+        <div class="img-carousel">
+            <div class="container-carousel">
+                <div>
+                    <img src="./img/carousel-1-min.png" alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-2-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-3-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-4-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-5-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-6-min.png " alt=" ">
+                </div>
+                <di>
+                    <img src="./img/carousel-7-min.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION CAROUSEL #2-->
+    <section class="section-carousel">
+        <div class="text-carousel">
+            <h6>Lo Más Vendidos en Deportes y Activades al Aire Libre</h6>
+            <a href="product-details.html" style='color: #0066C0; margin-left: 20px; text-decoration: none; font-size: 12px;'>Ver mas</a>
+        </div>
+        <div class="img-carousel">
+            <div class="container-carousel">
+                <div>
+                    <img src="./img/carousel-8-min.png" alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-9-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-10-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-11-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-12-min.png " alt=" ">
+                </div>
+                <div>
+                    <img src="./img/carousel-13-min.png " alt=" ">
+                </div>
+                <di>
+                    <img src="./img/carousel-14-min.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECTION DESCRIPTION ITEM-->
+    <section class="sectionFooter">
+        <a href="#menu">Inicio de página</a>
+    </section>
+    <footer class="container-footer">
+        <div class="items-footer">
+            <h6>Conócenos</h6>
+            <a href="#">Trabaja en Amazon</a>
+            <a href="#">Blog</a>
+            <a href="#">Acerca de Amazon</a>
+            <a href="#">Relaciones con los inversionistas</a>
+            <a href="#">Dispositivos Amazon</a>
+            <a href="#">Visita un centro logístico de Amazon</a>
+        </div>
+        <div class="items-footer">
+            <h6>Gana dinero con nosotros</h6>
+            <a href="#">Vende en Amazon</a>
+            <a href="#">Vende tus servicios en Amazon</a>
+            <a href="#">Vende en Amaon Business</a>
+            <a href="#">Vende tus Apps en Amazon</a>
+            <a href="#">Dispositivos Amazon</a>
+            <a href="#">Programa de afiliados</a>
+            <a href="#">Anuncia tus productos</a>
+            <a href="#">Pubilca tu libro en Kindle</a>
+            <a href="#">> Ver Más</a>
+        </div>
+        <div class="items-footer">
+            <h6>Productos de Pago Amazon</h6>
+            <a href="#">Compra con puntos</a>
+            <a href="#">Recarga tu Saldo</a>
+            <a href="#">Convertidor de Moneda de Amazon</a>
+        </div>
+        <div class="items-footer">
+            <h6>Podemos ayudarte</h6>
+            <a href="#">Tu cuenta</a>
+            <a href="#">Tus pedidos</a>
+            <a href="#">Tarifas de Envío y Políticas</a>
+            <a href="#">Devoluciones y Reemplazos</a>
+            <a href="#">Admistrar dispositivos</a>
+            <a href="#">Amazon Assistant</a>
+            <a href="#">Ayuda</a>
+        </div>
+    </footer>
+    <footer class="logo-footer">
+        <img src="./img/logo-footer.svg" alt="">
+    </footer>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.container-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    })
+</script>
 </body>
 </html>
