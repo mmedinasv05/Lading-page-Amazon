@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/Logo.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Amazon.com</title>
+</head>
+<body>
+    <section class="container-stripe">
+        <header class="header-stripe">
+            <div class="header-stripe-left">
+                <img src="./img//logo-amazon-payment.svg" alt="">
+            </div>
+            <div class="header-stripe-right">
+                <img src="./img/card-payment.svg" class="card-payment" alt="">
+                <div class="line-payment">
+                    <img src="./img/line-payment.svg" alt="">
+                </div>
+                <a href="#" style="color: #E2A301;">INICIAR SESIÓN</a>
+                <a href="#" style="color: #FA7800;">ENVÍO Y PAGO</a>
+                <a href="#">OPCIÓN DE REGALO</a>
+                <a href="#">FINALIZAR PEDIDO</a>
+            </div>
+        </header>
+        <div class="specify-payment">
+            <div class="box-specify">
+                <div class="text-specify">
+                    <img src="./img/icon-info.svg" alt="">
+                    <p>Especifica a continuación cómo te gusta realizar el pago 
+                        y lo guardaremos como opción.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="payment-method">
+            <h3>Selecciona un método de pago</h3>
+            <hr>
+        </div>
+        <div class="payment-method-second">
+            <div class="text-payment-method-second">
+                <h5>Selecciona uno de nuestros metodos de pago</h5>
+                <p>Amazon acepta la mayoría de tarjetas de crédito o débito y plataformas de pago</p>
+            </div>
+            <div class="button-payment-method-second"></div>
+        </div>
+        <div class="container-card-stripe">
+            <div class="text-card-stripe">
+                <p>Ingrese la información de su tarjeta:</p>
+            </div>
+            <div class="card-stripe">
+                <div class="content-card-stripe">
+                    <form id="card-form" action="">
+                        <input type="hidden" name="stripeToken" value="tok_1EwyRXBvTVUdv5mz935w4NDh">
+                        <div id="card-element" class="p-5"></div>
+
+                        <button type="submit">Pagar ahora</button>
+                    </form>
+                    <div id="errors"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-stripe">
+        <div class="row-stripe">
+            <a href="#">Condiciones de uso</a>
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div class="row-stripe">
+            <p>© 1996-2019, Amazon.com, Inc. o sus filiales</p>
+        </div>
+    </footer>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./js/card.js"></script>
+</body>
+</html>
