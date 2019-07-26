@@ -126,6 +126,35 @@
             width: 50%;
             height: 12vh;
             background-color: #ffffff;
+            display: flex;
+            form{
+                .btn-paypal{
+                    margin: 20px 0 10px 20px;
+                }
+            }
+            a{
+                padding: 10px 15px;
+                background-color: yellow;
+                text-decoration: none;
+                margin: 20px 0 10px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                background: linear-gradient(360deg, #EFC25C -7.29%, #F8E7C1 100%);
+                border: 1px solid #A5A5A5;
+                box-sizing: border-box;
+                border-radius: 4px;
+                color: #000000;
+                span{
+                    font-size: 11px;
+                    margin: 0;
+                    padding: 0 5px;
+                }
+                img{
+                    margin-top: 5px;
+                }
+            }
         }
     }
     .container-card-stripe{

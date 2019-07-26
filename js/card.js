@@ -41,6 +41,7 @@ form.addEventListener('submit', (event) => {
                 // Alertar al usuario que hubo un error
             } else {
                 console.log(result.token.id);
+                alert('Pago realizado con exito');
             }
         });
 });
